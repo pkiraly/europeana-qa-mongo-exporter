@@ -1,0 +1,10 @@
+# TODO
+# 1. cp set-variables.sh.template set-variables.sh
+# 2. replace <placeholders> to real values inside set-variables.sh
+
+DATA_EXPORT_DIR=<data-export-dir>
+DATA_ARCHIVE_DIR=<data-archive-dir>
+RECORD_API_URL=<127.0.0.1:8080>
+MONGO_HOST=<localhost>
+MONGO_PORT=<27017>
+MONGO_DATABASE=<mongo-db-name>
