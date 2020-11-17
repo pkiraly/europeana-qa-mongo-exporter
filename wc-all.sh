@@ -10,7 +10,7 @@ VERSION=$1
 
 source set-variables.sh
 
-for i in {0..11}
+for i in {0..15}
 do
   j=$(printf "%02d" $i)
   time=$(date +%T)
