@@ -1,7 +1,8 @@
 # Europeana Mongo exporter
 
 The aim of this reporitory is to export every record 
-as distinct JSON lines into files from a MongoDB.
+from a MongoDB into files as each line contain
+a single full record serialized as JSON.
 The application first reads all the identifiers from
 a database then via an external web service it retrieves
 and stores the records into files. This second step
@@ -24,6 +25,7 @@ this tool was developed.
 
 ## Usage
 
+ 0. `mvn clean install`
  1. `cp set-variables.sh.template set-variables.sh`
  2. replace <placeholders> to real values inside set-variables.sh
- 3. `run-all.sh [version]`
+ 3. `nohup ./run-all.sh [version] > logs/run-all-[version].log &` (where `version` is something like `v2020-09`)
